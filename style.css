@@ -1,0 +1,186 @@
+:root {
+  --danger-color: #dc3545;
+  --grey-color: #444;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  padding-top: 7rem;
+}
+
+.title {
+  font-size: 4rem;
+  color: var(--danger-color);
+  margin-bottom: -1rem;
+}
+
+.sub-title {
+  text-align: center;
+  margin: 1.8rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  color: var(--grey-color);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.start-container {
+  /* display: none; */
+}
+
+.start-container .center {
+  /* gap: 1rem; */
+  padding: 0 4rem;
+}
+
+.start-input {
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: var(--danger-color);
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.075) inset, 0 0 0px var(--danger-color);
+  outline: 0 none;
+  color: var(--grey-color);
+}
+
+.quest-container {
+  margin-top: -2rem;
+  padding: 0 3rem;
+}
+
+.quest-container .title {
+  line-height: 1.2;
+  font-size: 2.2rem !important;
+  text-align: center;
+}
+
+form:not(form[name="start-form"]) div {
+  margin: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+form:not(form[name="start-form"]) .center {
+  margin-top: 1.8rem;
+}
+
+.quest-container .title {
+  font-size: 3rem;
+}
+
+input[type="radio"]:after {
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #d1d3d1;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+input[type="radio"]:checked:after {
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  top: 5px;
+  left: -3px;
+  position: relative;
+  background-color: var(--danger-color);
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+input[type="radio"]:focus ~ label {
+  color: var(--danger-color);
+}
+
+.end-container .title {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.score-display {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.end-container {
+  display: none;
+}
+
+.end-container .center {
+  margin-top: 2rem;
+}
+
+.end-img {
+  width: 50%;
+  height: auto;
+}
+
+.question1 {
+  display: none;
+}
+
+.question2 {
+  display: none;
+}
+
+.question3 {
+  display: none;
+}
+
+.question4 {
+  display: none;
+}
+
+.question5 {
+  display: none;
+}
+
+.question6 {
+  display: none;
+}
+
+.question7 {
+  display: none;
+}
+
+.question8 {
+  display: none;
+}
+
+.question9 {
+  display: none;
+}
+
+.question10 {
+  display: none;
+}

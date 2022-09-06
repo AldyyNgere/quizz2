@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizz</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- AUDIO EFFECT  -->
+    <audio
+      src="audio/correct-answer-sound-effect.mp3"
+      id="correct-audio"
+    ></audio>
+    <audio src="audio/gaming-sound-effect-hd.mp3" id="wrong-audio"></audio>
+    <!-- AUDIO EFFECT END  -->
+
+    <!-- START CONTAINER  -->
+
+    <div class="container start-container">
+      <h1 class="title text-center">Quizz</h1>
+      <h4 class="sub-title fs-5">Please input your name before start</h4>
+      <form action="" name="start-form">
+        <div class="center">
+          <input
+            type="text"
+            class="form-control start-input"
+            name="username"
+            id="username"
+            required
+          />
+        </div>
+      </form>
+      <div class="center">
+        <button type="submit" id="btn-start" class="btn btn-danger">
+          start
+        </button>
+      </div>
+    </div>
+
+    <!-- START CONTAINER  END -->
+
+    <!-- QUESTION 1  -->
+
+    <div class="container quest-container question1">
+      <div class="title">When is Sumpah Pemuda Day celebrated?</div>
+      <div class="sub-title">Choose the right answer</div>
+      <form name="answers1" id="form-quizz">
+        <div>
+          <input type="radio" name="answ1" value="28" />
+          <label for="answ1">October 28</label>
+        </div>
+        <div>
+          <input type="radio" name="answ1" value="29" />
+          <label for="answ1">October 29</label>
+        </div>
+        <div>
+          <input type="radio" name="answ1" value="27" />
+          <label for="answ1">October 27</label>
+        </div>
+        <div class="center">
+          <button class="answer-btn btn-ms btn btn-danger" id="btn-answ-1">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- QUESTION 1  END -->
+
+    <!-- QUESTION 2  -->
+
+    <div class="container quest-container question2">
+      <div class="title">The First President of Indonesia is?</div>
+      <div class="sub-title">Choose the right answer</div>
+      <form name="answers2" id="form-quizz">
+        <div>
+          <input type="radio" name="answ2" value="soeharto" />
+          <label for="answ2">Soeharto</label>
+        </div>
+        <div>
+          <input type="radio" name="answ2" value="jokowi" />
+          <label for="answ2">Jokowi</label>
+        </div>
+        <div>
+          <input type="radio" name="answ2" value="soekarno" />
+          <label for="answ2">Soekarno</label>
+        </div>
+        <div class="center">
+          <button class="answer-btn btn-ms btn btn-danger" id="btn-answ-2">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- QUESTION 2  END -->
+
+    <!-- QUESTION 3 -->
+
+    <div class="container quest-container question3">
+      <div class="title">The National Emblem of Indonesia is?</div>
+      <div class="sub-title">Choose the right answer</div>
+      <form name="answers3" id="form-quizz">
+        <div>
+          <input type="radio" name="answ3" value="bhineka" />
+          <label for="answ3">Bhineka Tunggal Ika</label>
+        </div>
+        <div>
+          <input type="radio" name="answ3" value="garuda" />
+          <label for="answ3">Burung Garuda</label>
+        </div>
+        <div>
+          <input type="radio" name="answ3" value="pancasila" />
+          <label for="answ3">Pancasila</label>
+        </div>
+        <div class="center">
+          <button class="answer-btn btn-ms btn btn-danger" id="btn-answ-3">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- QUESTION 3 END -->
+
+    <!-- QUESTION 4 -->
+
+    <div class="container quest-container question4">
+      <div class="title">The Number of Provinces in Indonesia is?</div>
+      <div class="sub-title">Choose the right answer</div>
+      <form name="answers4" id="form-quizz">
+        <div>
+          <input type="radio" name="answ4" value="34" />
+          <label for="answ4">34 Province</label>
+        </div>
+        <div>
+          <input type="radio" name="answ4" value="33" />
+          <label for="answ4">33 Province</label>
+        </div>
+        <div>
+          <input type="radio" name="answ4" value="32" />
+          <label for="answ4">32 Province</label>
+        </div>
+        <div class="center">
+          <button class="answer-btn btn-ms btn btn-danger" id="btn-answ-4">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- QUESTION 4 END -->
+
+    <!-- QUESTION 5 -->
+
+    <div class="container quest-container question5">
+      <div class="title">The Currency of Japan is?</div>
+      <div class="sub-title">Choose the right answer</div>
+      <form name="answer5" id="form-quizz">
+        <div>
+          <input type="radio" name="answ5" value="rupiah" />
+          <label for="answ5">Rupiah</label>
+        </div>
+        <div>
+          <input type="radio" name="answ5" value="yen" />
+          <label for="answ5">Yen</label>
+        </div>
+        <div>
+          <input type="radio" name="answ5" value="yuan" />
+          <label for="answ5">Yuan</label>
+        </div>
+        <div class="center">
+          <button class="answer-btn btn-ms btn btn-danger" id="btn-answ-5">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- QUESTION 5 END -->
+
+    <!-- QUESTION 6 -->
+
+    <div class="container quest-container question6">
+      <div class="title">
+        The Countries Bordering Indonesia in The South are?
+      </div>
+      <div class="sub-title">Choose the right answer</div>
+      <form name="answer6" id="form-quizz">
+        <div>
+          <input type="radio" name="answ6" value="australia" />
+          <label for="answ6">Australia</label>
+        </div>
+        <div>
+          <input type="radio" name="answ6" value="singapura" />
+          <label for="answ6">Singapura</label>
+        </div>
+        <div>
+          <input type="radio" name="answ6" value="timor" />
+          <label for="answ6">Timor Leste</label>
+        </div>
+        <div class="center">
+          <button class="answer-btn btn-ms btn btn-danger" id="btn-answ-6">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- QUESTION 6 END -->
+
+    <!-- QUESTION 7 -->
+
+    <div class="container quest-container question7">
+      <div class="title">The largest sea in Indonesia is?</div>
+      <div class="sub-title">Choose the right answer</div>
+      <form name="answer7" id="form-quizz">
+        <div>
+          <input type="radio" name="answ7" value="atlantic" />
+          <label for="answ7">Atlantic Ocean</label>
+        </div>
+        <div>
+          <input type="radio" name="answ7" value="pasific" />
+          <label for="answ7">Pasific Ocean</label>
+        </div>
+        <div>
+          <input type="radio" name="answ7" value="hindia" />
+          <label for="answ7">Hindia Ocean</label>
+        </div>
+        <div class="center">
+          <button class="answer-btn btn-ms btn btn-danger" id="btn-answ-7">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- QUESTION 7 END -->
+
+    <!-- QUESTION 8 -->
+
+    <div class="container quest-container question8">
+      <div class="title">
+        The Name of the Indonesian Hero Used in the IDR 5,000 Denomination is?
+      </div>
+      <div class="sub-title">Choose the right answer</div>
+      <form name="answer8" id="form-quizz">
+        <div>
+          <input type="radio" name="answ8" value="imam" />
+          <label for="answ8">Imam Bonjol</label>
+        </div>
+        <div>
+          <input type="radio" name="answ8" value="soekarno" />
+          <label for="answ8">Soekarno Hatta</label>
+        </div>
+        <div>
+          <input type="radio" name="answ8" value="sudirman" />
+          <label for="answ8">Jendral Soedirman</label>
+        </div>
+        <div class="center">
+          <button class="answer-btn btn-ms btn btn-danger" id="btn-answ-8">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- QUESTION 8 END -->
+
+    <!-- QUESTION 9 -->
+
+    <div class="container quest-container question9">
+      <div class="title">
+        The Area in Indonesia That is not Crossed By The Equator is?
+      </div>
+      <div class="sub-title">Choose the right answer</div>
+      <form name="answer9" id="form-quizz">
+        <div>
+          <input type="radio" name="answ9" value="papua" />
+          <label for="answ9">Papua</label>
+        </div>
+        <div>
+          <input type="radio" name="answ9" value="sulawesi" />
+          <label for="answ9">Sulawesi</label>
+        </div>
+        <div>
+          <input type="radio" name="answ9" value="jakarta" />
+          <label for="answ9">Jakarta</label>
+        </div>
+        <div class="center">
+          <button class="answer-btn btn-ms btn btn-danger" id="btn-answ-9">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- QUESTION 9 END -->
+
+    <!-- QUESTION 10 -->
+
+    <div class="container quest-container question10">
+      <div class="title">
+        Provinces in Indonesia that have the status of a special region are:
+      </div>
+      <div class="sub-title">Choose the right answer</div>
+      <form name="answer10" id="form-quizz">
+        <div>
+          <input type="radio" name="answ10" value="bandung" />
+          <label for="answ10">Bandung</label>
+        </div>
+        <div>
+          <input type="radio" name="answ10" value="yogyakarta" />
+          <label for="answ10">Yogyakarta</label>
+        </div>
+        <div>
+          <input type="radio" name="answ10" value="medan" />
+          <label for="answ10">Medan</label>
+        </div>
+        <div class="center">
+          <button class="answer-btn btn-ms btn btn-danger" id="btn-answ-10">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- QUESTION 10 END -->
+
+    <!-- ENDING CONTAINER  -->
+
+    <div class="container end-container">
+      <h1 class="title">
+        Thanks For Playing Quizz
+        <span class="username"></span>
+      </h1>
+      <h5 class="score-display">
+        Your Score : <span class="score-data"></span>
+      </h5>
+      <div class="center">
+        <img src="" class="end-img" />
+      </div>
+      <div class="center">
+        <button id="start-again" class="btn btn-danger">play again</button>
+      </div>
+    </div>
+
+    <!-- ENDING CONTAINER  END -->
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
